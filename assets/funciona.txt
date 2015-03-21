@@ -1,8 +1,0 @@
-Droguerías Cercanas
-
-Al interactuar con esta opción, usted podrá conocer en términos de distancia las droguerías más cercanas para encontrar el producto que necesite.
-Si desea ampliar la información sobre la droguería más cercana basta con tocar la tachuela de marcación, allí encontrará los horarios, nombres, direcciones y los servicios que presta la droguería.
-Puntos Cruz Verde
-Permite delimitar los lugares de acuerdo a su preferencia de ubicación.
-Por ejemplo, si usted necesita buscar droguerías sólo en el sector de chapinero, deberá primero elegir la ciudad, en este caso Bogotá, posteriormente debe elegir la localidad chapinero, y finalmente dar clic en la opción “Ver en el mapa”. Allí solo se mostrarán las droguerías ubicadas en este sector específico que usted eligió.
-Si necesita ayuda específica comuníquese al siguiente correo servicioalcliente@farmasanitas.com
