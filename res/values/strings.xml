@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Cruz Verde</string>
+    <string name="title_activity_main">Cruz Verde</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="version">Version 1.0 - Todos los derechos reservados Cruz Verde</string>
+    <string name="title_activity_creditos_">Creditos_Activity</string>
+    <string name="title_activity_ayuda_">Ayuda_Activity</string>
+    <string name="ayuda">Ayuda</string>
+    <string name="title_activity_contacto_">Contacto_Activity</string>
+    <string name="maps_debug">AIzaSyCNr49mlw-Y7CjTHoFgd1EfeDVrh9mXH7c</string>
+    <string name="title_activity_droguerias_cercanas_">DrogueriasCercanas_Activity</string>
+    <string name="title_activity_puntos_cruz_">PuntosCruz_Activity</string>
+    <string name="texto_contactos">Droguerías Cruz Verde - famasanitas  2014 \n Sede administrativa calle 96 No. 11-61 \n PBX:(1)5111022 Bogotá</string>
+    <string name="contacto">Contacto</string>
+    <string name="terminoslegales">Términos Legales</string>
+    <string name="nosotros">Nosotros</string>
+    <string name="Como_funciona">¿Cómo funciona?</string>
+    <string name="como_pedir_domicilio">¿Cómo pedir domicilio?</string>
+    <string name="preguntas_frecuentes">Preguntas Frecuentes</string>
+    <string name="title_activity_ayuda_detalle">Ayuda_detalle</string>
+    <string name="title_activity_ayuda_detalle_activity">Ayuda_detalle_activity</string>
+    <string name="terminos"></string>
+</resources>
