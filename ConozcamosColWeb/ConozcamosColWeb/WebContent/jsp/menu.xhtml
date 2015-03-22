@@ -1,0 +1,59 @@
+<f:view xmlns="http://www.w3.org/19999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:pm="http://primefaces.org/mobile" contentType="text/html"
+	renderKitId="PRIMEFACES_MOBILE">
+
+	<pm:page title="Menu Inicio">
+
+		<pm:view id="buttons">
+			<pm:header title="Menu">
+				      <f:facet name="right">
+                    <p:button value="Opciones" icon="gear" href="#Opciones" />
+                </f:facet>
+				      <f:facet name="left">
+				      <p:button icon="home" value="Bienvenido:  #{principalMB.usuarioDTO.usuNombre} #{principalMB.usuarioDTO.usuApellido}" onclick=""/></f:facet>
+			</pm:header>
+
+			<pm:content>
+			
+					<p:commandButton value="Simbolos" type="button">
+						<f:attribute name="swatch" value="a" />
+					</p:commandButton>
+					<p:commandButton value="Mapas" type="button">
+						<f:attribute name="swatch" value="b" />
+					</p:commandButton>
+					<p:commandButton value="Regiones" type="button">
+						<f:attribute name="swatch" value="e" />
+					</p:commandButton>
+					<p:commandButton value="Departamentos" type="button">
+						<f:attribute name="swatch" value="d" />
+					</p:commandButton>
+			
+				<p:commandButton value="Evaluacion" type="button">
+					<f:attribute name="swatch" value="a"/>
+				</p:commandButton>
+				
+				
+			</pm:content>
+		</pm:view>
+		
+		 <pm:view id="Opciones">
+            <pm:header title="Opciones">
+                <f:facet name="left"><p:button value="Atras" icon="back"  href="#buttons?transition=flow"/></f:facet>
+            </pm:header>
+
+            <pm:content>
+            <p:growl id="growlmsg" />  
+                <h:form>  
+                     
+                            <p:button value="Actualizar datos"  icon="edit"/>  
+                            <p:commandButton value="Cerrar sesion" icon="delete"    actionListener="#{autenticacionMB.Cerrarsesion}" update=":growlmsg" />                           
+                                        
+                    </h:form>
+            </pm:content>
+        </pm:view>
+	</pm:page>
+</f:view>

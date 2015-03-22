@@ -1,0 +1,79 @@
+<f:view xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:pm="http://primefaces.org/mobile" contentType="text/html"
+	renderKitId="PRIMEFACES_MOBILE">
+
+	<pm:page title="Conozcamos Colombia">
+
+		<!-- Main View -->
+		<pm:view id="main" swatch="c">
+			<pm:header title="Conozcamos Colombia">
+
+			</pm:header>
+
+			<pm:content>
+
+				<h:form id="frmPrincipal">
+					<p:growl id="growlMsg" showDetail="true" />
+
+					<p:inputText id="txtUsuario" value="#{autenticacionMB.usuario}"
+						label="Usuario: " required="true"
+						requiredMessage="Es obligatorio que se diligencie el usuario">
+						<f:attribute name="placeholder" value="Search" />
+					</p:inputText>
+					<p:inputText id="Contrasenia"
+						value="#{autenticacionMB.contrasenia}" type="password"
+						label="Contraseña: " required="true"
+						requiredMessage="Es obligatorio que se diligencie la contraseña" />
+
+					<p:commandButton value="Ingresar" update="growlMsg"
+						actionListener="#{autenticacionMB.autenticarUsuario}" />
+					<p:button value="Registrese aqui" href="#registro?transition=flow" />
+				</h:form>
+			</pm:content>
+		</pm:view>
+
+
+		<pm:view id="registro" swatch="b">
+			<pm:header title="Registro">
+				<f:facet name="left">
+					<p:button value="Back" icon="back" href="#main?transition=flow" />
+				</f:facet>
+			</pm:header>
+			<pm:content>
+				<h:form id="frmRegistro">
+					<p:growl id="growl" showDetail="true" />
+					<p:inputText id="Nombres" value="#{registroUsuarioMB.nombres}"
+						label="Nombres: " required="true"
+						requiredMessage="Debe ingresar su nombre" />
+					<p:inputText id="Apellidos" value="#{registroUsuarioMB.apellidos}"
+						label="Apellidos: " required="true"
+						requiredMessage="Debe ingresar sus apellidos" />
+					<p:inputText id="Email" value="#{registroUsuarioMB.email}"
+						label="E-mail: " required="true"
+						requiredMessage="Debe ingresar su Email" />
+					<p:inputText id="Usuario" value="#{registroUsuarioMB.usuario}"
+						label="Usuario: " required="true"
+						requiredMessage="Debe ingresar su Usuario" />
+					<p:inputText id="Contrasenia" type="password"
+						value="#{registroUsuarioMB.contrasenia}" label="Contraseña: "
+						required="true" requiredMessage="Debe ingresar su Contraseña" />
+					<p:commandButton value="Registrar" update="growl,frmRegistro"
+						action="#{registroUsuarioMB.registrarUsu}" />
+					<p:button value="Cancelar" type="button"
+						actionListener="#main?transition=flow"
+						action="#{registroUsuarioMB.limpiarCampos}" />
+
+				</h:form>
+			</pm:content>
+
+		</pm:view>
+
+
+
+	</pm:page>
+
+</f:view>

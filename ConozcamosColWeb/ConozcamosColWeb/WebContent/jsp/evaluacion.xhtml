@@ -1,0 +1,29 @@
+<f:view xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:pm="http://primefaces.org/mobile" contentType="text/html"
+	renderKitId="PRIMEFACES_MOBILE">
+
+	<pm:page title="Evaluacion">
+
+		<!-- Quiz View -->
+		<pm:view id="evaluacion">
+			<p:selectManyCheckbox id="checkPreg1"
+				label="Al momento de escribir el himno nacional de Colombia, ¿qué quería rememorar Rafael Núñez?">
+				<f:selectItem itemLabel="La batalla de Boyacá" itemValue="Opcion 1" />
+				<f:selectItem itemLabel="La independencia de Cartagena" itemValue="Option 2" />
+				<f:selectItem itemLabel="La batalla del Pantano de Vargas" itemValue="Option 3" />
+				<f:selectItem itemLabel="Ninguna de las anteriores" itemValue="Option 4"/>
+			</p:selectManyCheckbox>
+			<p:selectManyCheckbox id="checkPreg2"
+				label="PREGUNTA">
+				<f:selectItem itemValue="Opcion 1" itemLabel="Respuesta V o F" />
+				<f:selectItem itemValue="Opcion 2" itemLabel="Respuesta V o F" />
+				<f:selectItem itemValue="Opcion 3" itemLabel="Respuesta V o F" />
+				<f:selectItem itemValue="Opcion 4" itemLabel="Ninguna de las anteriores" />
+			</p:selectManyCheckbox>
+			
+		</pm:view>
+	</pm:page>
+</f:view>
